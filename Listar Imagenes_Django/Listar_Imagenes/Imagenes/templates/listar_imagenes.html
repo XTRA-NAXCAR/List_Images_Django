@@ -1,0 +1,5 @@
+{% for imagen in imagenes %}
+    <h2>{{ imagen.titulo }}</h2>
+    <img src="{{ imagen.imagen.url }}" alt="{{ imagen.titulo }}">
+    <p>{{ imagen.descripcion }}</p>
+{% endfor %}
